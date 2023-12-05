@@ -494,3 +494,9 @@ footer .info::after{
 .header_area{
     z-index: 99;
 }
+.learn_btn:hover, .submit_btn:hover{
+    background: #29a38e;
+}
+.header_box.main_logo:hover, .header_item:hover{
+    color:#29a38e;
+}
