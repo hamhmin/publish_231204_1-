@@ -6,6 +6,16 @@ $(document).ready(function(){
         link = $(".section2").offset().top - header;
         window.scrollTo({ left: 0, top: link, behavior: "smooth" });
     });
+    $(window).scroll(function(e){
+        var sec2 = $(".section2").offset().top;
+        var win = window.scrollY;
+        if(sec2 < win + 200){
+            $("header.main").css("backdrop-filter","blur(12px)");
+        } else {
+            $("header.main").css("backdrop-filter","blur(0px)");
+        }
+        
+    });
     $(".link_btn").on("click",function(){
         header = $(".main").height() *1;
         if($(this).attr("link") == "1"){
@@ -21,7 +31,6 @@ $(document).ready(function(){
     });
     $(".main_logo").on("click",function(){
         window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
-
     });
 
     const u = document.querySelector(".submit_btn");
@@ -33,7 +42,7 @@ $(document).ready(function(){
             Email: ${r[1].value}
             Message: ${t.value}
             `
-            , n = `mailto:ceo@a-on.shop?subject=엘앤케이 컴퍼니_Contact&body=${encodeURIComponent(s)}`;
+            , n = `mailto:ceo@a-on.shop?subject=랫머니워크_Contact&body=${encodeURIComponent(s)}`;
         window.open(n)
     });
 });

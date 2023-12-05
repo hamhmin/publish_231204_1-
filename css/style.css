@@ -37,6 +37,14 @@ header{
     align-items: center;
     gap: 116px;
 }
+.header_box.main_logo{
+    color: #34D1B6;
+font-family: Noto Sans KR;
+font-size: 25.641px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
 .header_item, .main_logo{
     cursor: pointer;
 }
@@ -375,6 +383,11 @@ footer .info::after{
 
     @media only screen and (max-width: 1240px) {
     
+        .section2 .flex_item{
+        font-size: 25px;
+        padding-left: 30px;
+        gap: 30px;
+        }
 }
 
 
@@ -423,6 +436,9 @@ footer .info::after{
         font-size: 12px;
         height: 100px;
     }
+    .section3{
+        margin-top: 140px;
+    }
     .section3 .flex_box{
         width: 80%;
         flex-direction: column;
@@ -441,6 +457,8 @@ footer .info::after{
         height: 80vw;
         font-size: 35px;
         background-size: cover;
+        padding-left: 73px;
+        gap: 73px;
     }
     .section2{
         height: 100%;
@@ -453,4 +471,18 @@ footer .info::after{
     .section_title{
         font-size: 34px;
     }
+}
+
+.blur_bg{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* backdrop-filter: blur(12px); */
+    background-color: transparent;
+}
+.header_area{
+    z-index: 99;
 }
