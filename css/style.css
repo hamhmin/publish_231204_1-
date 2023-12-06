@@ -508,6 +508,12 @@ footer .info::after{
     body{
         overflow-x: hidden;
     }
+    .section3 .bold_text{
+        font-size: 50px;
+    }
+    .section3 .bold_text.second {
+        transform: translate(42%, -36%);
+    }
 }
 
 .blur_bg{
