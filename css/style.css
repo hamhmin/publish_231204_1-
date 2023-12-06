@@ -505,7 +505,8 @@ footer .info::after{
     .section1{
         width: 100vw;
     }
-    body{
+    html, body{
+        max-width: 100vw;
         overflow-x: hidden;
     }
     .section3 .bold_text{
