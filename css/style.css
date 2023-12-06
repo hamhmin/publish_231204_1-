@@ -418,7 +418,6 @@ footer .info::after{
         transform: none;
         font-size: 15px;
         height: max-content;
-        text-align: center;
     }
     .header_box{
         flex-wrap: wrap;
@@ -426,6 +425,7 @@ footer .info::after{
     .link_btn{
         width: 100%;
         margin-bottom: 10px;
+        padding-left: 10%;
     }
     .header_area{
         flex-direction: column;
