@@ -499,10 +499,14 @@ footer .info::after{
         margin: 0 auto;
     }
     .section_title{
-        font-size: 34px;
+        font-size: 27px;
+        letter-spacing: 5px;
     }
     .section1{
         width: 100vw;
+    }
+    body{
+        overflow-x: hidden;
     }
 }
 
