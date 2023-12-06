@@ -402,12 +402,34 @@ footer .info::after{
 
 
 @media only screen and (max-width: 530px) {
+    .header_box.main_logo{
+        margin-top: 10px;
+    }
+    .main_title{
+        font-size: 34px;
+        letter-spacing: 12.62px;
+    }
+    .section1 .text_area{
+        padding-top: 200px;
+    }
     header{
         min-width: 100vw;
+        left: 0;
+        transform: none;
+        font-size: 15px;
+        height: max-content;
+        text-align: center;
+    }
+    .header_box{
+        flex-wrap: wrap;
+    }
+    .link_btn{
+        width: 100%;
+        margin-bottom: 10px;
     }
     .header_area{
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
     }
     .header_box{
         width: 100%;
@@ -463,10 +485,10 @@ footer .info::after{
     .section2 .flex_item{
         width: 80vw;
         height: 80vw;
-        font-size: 35px;
+        font-size: 23px;
         background-size: cover;
-        padding-left: 73px;
-        gap: 73px;
+        padding-left: 30px;
+        gap: 30px;
     }
     .section2{
         height: 100%;
@@ -478,6 +500,9 @@ footer .info::after{
     }
     .section_title{
         font-size: 34px;
+    }
+    .section1{
+        width: 100vw;
     }
 }
 
